@@ -39,14 +39,14 @@ export default {
 
   methods: {
     getItem() {
-      let uri = 'http://localhost:8000/employees/' + this.id;
+      let uri = 'https://demo-vue-js.herokuapp.com/employees/' + this.id;
       this.axios.get(uri).then((response) => {
         this.item = response.data;
       });
     },
 
     updateItem() {
-      let uri = 'http://localhost:8000/employees/' + this.id;
+      let uri = 'https://demo-vue-js.herokuapp.com/employees/' + this.id;
       this.axios.put(uri, this.item).then(() => {
         this.$emit('close')
       });

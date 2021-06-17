@@ -43,13 +43,13 @@ export default {
 
   methods: {
     fetchItems() {
-      let uri = 'http://localhost:8000/employees';
+      let uri = 'https://demo-vue-js.herokuapp.com/employees';
       this.axios.get(uri).then((response) => {
         this.items = response.data;
       });
     },
     deleteItem(id) {
-      let uri = 'http://localhost:8000/employees/' + id;
+      let uri = 'https://demo-vue-js.herokuapp.com/employees/' + id;
 
       this.axios.delete(uri).then(() => {
         this.fetchItems()

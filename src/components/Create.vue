@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     addItem() {
-      let uri = 'http://localhost:8000/employees'
+      let uri = 'https://demo-vue-js.herokuapp.com/employees'
       this.axios.post(uri, this.item)
           .then(() => {
             this.$router.push({ name: 'Index' })

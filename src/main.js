@@ -6,7 +6,6 @@ import NProgress from 'nprogress';
 
 import App from './App.vue';
 import Create from './components/Create.vue';
-import Edit from './components/Edit.vue';
 import Index from './components/Index.vue';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
